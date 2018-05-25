@@ -1,0 +1,48 @@
+// Temp Converter
+function cToF(celsius) {
+  // this is celsius to Fahrenheit
+  var c = celsius;
+  var f = (c * 1.8) + 32;
+  console.log (c + "°C is " + f + "°F");
+}
+function fToC(fahrenheit) {
+  // this is Fahrenheit to Celsius
+  var F = fahrenheit;
+  var C = (5/9) * (F - 32);
+  console.log (F + "°F is " + C + "°C");
+}
+
+cToF(60);
+fToC(45);
+
+//computer Average Length of Words
+function computeAverageLengthOfWords(word1, word2) {
+  // your code here
+  var average = parseInt(word1.length + word2.length);
+  var a = average/2;
+  return a;
+}
+
+computeAverageLengthOfWords('code','programs')
+
+//Check Age
+function checkAge(name, age) {
+  // your code here
+  if (age < 21){
+    var hi = ("Go home, " + name + "!");
+    return hi;
+}  else if (age >= 21){
+    var hi = ("Welcome, " + name + "!");
+    return hi;
+  }
+}
+
+//is Even And Greater Than Ten
+function isEvenAndGreaterThanTen(num) {
+  // your code here
+  if (num > 10 && num%2 === 0){
+    return true;
+  } else {
+    return false
+  }
+}
